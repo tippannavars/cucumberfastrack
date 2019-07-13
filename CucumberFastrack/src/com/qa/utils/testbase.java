@@ -16,6 +16,9 @@ public class testbase
 	
 	public testbase()
 	{
+		//
+	//	************************
+		//
 		prop=new Properties();
 		try
 		{
