@@ -41,7 +41,11 @@ public static void initialization()
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		driver=new ChromeDriver();
 	}
-	
+	else
+	{
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+		driver=new ChromeDriver();
+	}
 	driver.get(prop.getProperty("url"));
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(testutil.ITO, TimeUnit.SECONDS);
